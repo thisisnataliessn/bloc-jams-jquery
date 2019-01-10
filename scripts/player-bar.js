@@ -11,7 +11,7 @@
         if (nextSongIndex >= album.songs.length) {return;}
         const nextSong = album.songs[nextSongIndex];
         helper.playPauseAndUpdate(nextSong);
-    });
+        });
 
     $('button#previous').on("click", function() {
         if (player.playState !== 'playing') {return;}
@@ -32,8 +32,8 @@
         const duration = player.getDuration();
         const percent = (currentTime/duration) * 100;
         $('#time-control .current-time').text(player.prettyTime(currentTime));
-        $('#time-control input').val(percent);
-        console.log(duration);
+        $('#time-control .total-time').text(player.prettyTime(duration));
+        $('#time-control input').val(percent);             
     }, 1000)
 
     $("#volume-control input").on('input', function() {
