@@ -33,6 +33,7 @@
         const percent = (currentTime/duration) * 100;
         $('#time-control .current-time').text(player.prettyTime(currentTime));
         $('#time-control input').val(percent);
+        console.log(duration);
     }, 1000)
 
     $("#volume-control input").on('input', function() {
