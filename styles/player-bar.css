@@ -39,15 +39,15 @@
   color: hsla(0, 0%, 100%, 1);
 }
 
-#play-pause .ion-pause {
+#play-pause .ion-md-pause {
   display: none;
 }
 
-#play-pause[playState="playing"] .ion-pause {
+#play-pause[playState="playing"] .ion-md-pause {
   display: block;
 }
 
-#play-pause[playState="playing"] .ion-play {
+#play-pause[playState="playing"] .ion-md-play {
   display: none;
 }
 
